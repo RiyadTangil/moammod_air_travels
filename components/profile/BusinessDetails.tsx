@@ -55,9 +55,9 @@ export default function BusinessDetails() {
           <div key={title} className="detail-card">
             <h3><span>{ICONS[title]}</span> {title}</h3>
             {rows.map(([key, val, green]) => (
-              <div key={key} className="detail-row">
-                <span className="key">{key}</span>
-                <span className={`val${green ? ' val-green' : ''}`}>{val}</span>
+              <div key={key as string} className="detail-row">
+                <span className="key">{key as string}</span>
+                <span className={`val${green ? ' val-green' : ''}`}>{val as string}</span>
               </div>
             ))}
           </div>
