@@ -73,8 +73,17 @@ export default function Hero() {
         </div>
         <h1>
           Fly Further,<br />
-          Dream <span className="highlight">Bigger</span> with<br />
-          Mohammod Air International Travels
+          Dream <span className="highlight">Bigger</span>
+          <div style={{ 
+            fontSize: 'clamp(1.2rem, 3.5vw, 2.2rem)', 
+            marginTop: '16px', 
+            color: 'var(--blue-glow)', 
+            fontWeight: 800, 
+            letterSpacing: '-0.5px',
+            lineHeight: 1.3
+          }}>
+            with Mohammod Air International Travels
+          </div>
         </h1>
         <p>
           From manpower recruitment to visa processing, air ticketing to Hajj &amp; Umrah — we handle every step of your journey with care, speed, and expertise.
