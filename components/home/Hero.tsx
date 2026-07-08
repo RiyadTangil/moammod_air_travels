@@ -68,33 +68,8 @@ export default function Hero() {
 
       <div className="hero-content">
         {/* Company name — top highlight */}
-        <div style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '10px',
-          padding: '16px 44px',
-          borderRadius: '100px',
-          background: 'rgba(10, 30, 60, 0.55)',
-          border: '1.5px solid rgba(66,165,245,0.55)',
-          backdropFilter: 'blur(20px)',
-          WebkitBackdropFilter: 'blur(20px)',
-          boxShadow: '0 0 48px rgba(66,165,245,0.22), 0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12)',
-          marginBottom: '28px',
-          animation: 'fadeInUp 0.7s ease both',
-        }}>
-          <span style={{
-            fontSize: 'clamp(1.5rem, 3.8vw, 2.6rem)',
-            fontWeight: 900,
-            letterSpacing: '0.3px',
-            lineHeight: 1.2,
-            background: 'linear-gradient(90deg, #ffffff 0%, #42A5F5 35%, #66BB6A 65%, #ffffff 100%)',
-            backgroundSize: '200% auto',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            animation: 'gradientShift 5s linear infinite',
-            whiteSpace: 'nowrap',
-          }}>
+        <div className="hero-company-wrap">
+          <span className="hero-company-text">
             ✈️ Mohammod Air International Travels
           </span>
         </div>

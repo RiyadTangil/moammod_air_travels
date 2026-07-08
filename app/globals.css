@@ -126,6 +126,46 @@ ul { list-style: none; }
 .hero p { font-size: 1rem; color: rgba(255,255,255,0.72); max-width: 560px; margin: 0 auto 36px; font-weight: 300; line-height: 1.8; animation: fadeInUp 1s ease 0.3s both; text-align: center; }
 .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeInUp 1.1s ease 0.4s both; justify-content: center; }
 
+/* Company name hero highlight */
+.hero-company-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 44px;
+  border-radius: 100px;
+  background: rgba(10, 30, 60, 0.55);
+  border: 1.5px solid rgba(66,165,245,0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 48px rgba(66,165,245,0.22), 0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12);
+  margin-bottom: 28px;
+  animation: fadeInUp 0.7s ease both;
+  text-align: center;
+}
+.hero-company-text {
+  font-size: clamp(1.5rem, 3.8vw, 2.6rem);
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #ffffff 0%, #42A5F5 35%, #66BB6A 65%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 5s linear infinite;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero-company-wrap {
+    padding: 12px 24px;
+    border-radius: 20px;
+  }
+  .hero-company-text {
+    white-space: normal;
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+}
 .hero-stats { position: absolute; bottom: 40px; left: 8%; right: 8%; z-index: 2; display: flex; gap: 24px; animation: fadeInUp 1.2s ease 0.5s both; flex-wrap: wrap; justify-content: center; }
 .stat-card { background: rgba(255,255,255,0.07); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-md); padding: 16px 24px; text-align: center; transition: var(--transition); }
 .stat-card:hover { background: rgba(66,165,245,0.15); border-color: rgba(66,165,245,0.3); transform: translateY(-4px); }
