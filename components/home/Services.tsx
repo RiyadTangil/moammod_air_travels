@@ -1,15 +1,96 @@
 'use client';
+import Image from 'next/image';
 import { useModal } from '@/context/ModalContext';
 
 const SERVICES = [
-  { icon: '👷', badge: 'Most Popular', name: 'Manpower Recruitment', desc: 'We source and deploy skilled Bangladeshi workers to Malaysia, Qatar, Saudi Arabia, UAE and more with full legal documentation.', cta: 'Apply Now' },
-  { icon: '🇮🇳', badge: 'Quick Processing', name: 'Indian Visa', desc: 'Tourist, medical, and business visa for India. Single & multiple entry options available with door-to-door service across Bangladesh.', cta: 'Apply Now' },
-  { icon: '🌍', badge: '40+ Countries', name: 'Tourist Visa', desc: 'Schengen, UK, USA, Thailand, Singapore, Malaysia, and more. We handle all paperwork so you can focus on your trip.', cta: 'Apply Now' },
-  { icon: '✈️', badge: 'Best Prices', name: 'Air Ticketing', desc: 'Domestic & international flight bookings at the best rates. All major airlines — Biman, Emirates, Qatar Airways, Air Arabia, and more.', cta: 'Book Now' },
-  { icon: '🕌', badge: 'Govt. Approved', name: 'Hajj & Umrah', desc: 'Comprehensive Hajj & Umrah packages including visa, flights, accommodation in Makkah & Madinah, transport and group guidance.', cta: 'View Packages' },
-  { icon: '📋', badge: 'Gulf & Asia', name: 'Work Permit', desc: 'Legal work permit processing for Saudi Arabia, Malaysia, Qatar, UAE, Oman, Bahrain. Full documentation and embassy follow-up.', cta: 'Apply Now' },
-  { icon: '🏥', badge: 'India & Thailand', name: 'Medical Visa', desc: 'Urgent medical visa for India, Thailand, Singapore. Hospital appointment assistance, language support, and accommodation help.', cta: 'Apply Now' },
-  { icon: '🎓', badge: 'Canada • Australia • UK', name: 'Student Visa', desc: 'Complete student visa consultancy — IELTS guidance, university admission support, visa filing for Canada, Australia, UK, USA, Malaysia.', cta: 'Apply Now' },
+  {
+    icon: '👷',
+    badge: 'Most Popular',
+    name: 'Manpower',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+    color: '#F59E0B',
+  },
+  {
+    icon: '🇮🇳',
+    badge: 'Quick Processing',
+    name: 'Indian Visa',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80',
+    color: '#EF4444',
+  },
+  {
+    icon: '🌍',
+    badge: '40+ Countries',
+    name: 'Tourist Visa',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80',
+    color: '#10B981',
+  },
+  {
+    icon: '✈️',
+    badge: 'Best Prices',
+    name: 'Air Ticketing',
+    cta: 'Book Now',
+    img: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80',
+    color: '#42A5F5',
+  },
+  {
+    icon: '🕌',
+    badge: 'Govt. Approved',
+    name: 'Hajj & Umrah',
+    cta: 'View Packages',
+    img: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=80',
+    color: '#A78BFA',
+  },
+  {
+    icon: '📋',
+    badge: 'Gulf & Asia',
+    name: 'Work Permit',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80',
+    color: '#F97316',
+  },
+  {
+    icon: '🏥',
+    badge: 'India & Thailand',
+    name: 'Medical Visa',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80',
+    color: '#06B6D4',
+  },
+  {
+    icon: '🎓',
+    badge: 'Canada • Australia • UK',
+    name: 'Student Visa',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80',
+    color: '#66BB6A',
+  },
+  {
+    icon: '📘',
+    badge: 'Fast Service',
+    name: 'Passport',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=600&q=80',
+    color: '#38BDF8',
+  },
+  {
+    icon: '🛡️',
+    badge: 'Official Clearance',
+    name: 'Police Clearance',
+    cta: 'Apply Now',
+    img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80',
+    color: '#FB923C',
+  },
+  {
+    icon: '🏋️',
+    badge: 'Govt. Certified',
+    name: 'PDO / Training',
+    cta: 'Enroll Now',
+    img: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=80',
+    color: '#E879F9',
+  },
 ];
 
 export default function Services() {
@@ -31,11 +112,46 @@ export default function Services() {
       <div className="services-grid" id="servicesGrid">
         {SERVICES.map(svc => (
           <div className="service-card" key={svc.name} onClick={() => openModal(svc.name)}>
-            <div className="service-icon">{svc.icon}</div>
-            <div className="card-badge">{svc.badge}</div>
-            <h3>{svc.name}</h3>
-            <p>{svc.desc}</p>
-            <div className="card-link">{svc.cta} <span>→</span></div>
+            {/* Image area */}
+            <div className="svc-img-wrap">
+              <Image
+                src={svc.img}
+                alt={svc.name}
+                fill
+                sizes="(max-width:768px) 100vw, 33vw"
+                className="svc-img"
+              />
+              <div className="svc-img-overlay" />
+              <div
+                className="svc-float-icon"
+                style={{
+                  background: svc.color + '22',
+                  borderColor: svc.color + '66',
+                  color: '#fff',
+                }}
+              >
+                {svc.icon}
+              </div>
+              <div
+                className="svc-float-badge"
+                style={{
+                  background: svc.color + '22',
+                  borderColor: svc.color + '66',
+                  color: '#fff',
+                }}
+              >
+                {svc.badge}
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="svc-body">
+              <h3 className="svc-title">{svc.name}</h3>
+              <div className="svc-cta" style={{ color: svc.color }}>
+                <span>{svc.cta}</span>
+                <span className="svc-arrow">→</span>
+              </div>
+            </div>
           </div>
         ))}
       </div>

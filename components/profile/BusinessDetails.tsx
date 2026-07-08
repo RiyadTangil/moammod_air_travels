@@ -20,8 +20,9 @@ const INFO_ROWS = {
   'Contact Details': [
     ['Phone 1', '01775725566'],
     ['Phone 2', '01775725566'],
-    ['WhatsApp', '01775725566'],
-    ['Email', 'mohammadairtravels1@gmail.com'],
+    ['WhatsApp', '01879994701'],
+    ['Email 1', 'mohammadairtravels1@gmail.com'],
+    ['Email 2', 'reservation@mohammadairint.com'],
     ['Website', 'www.matravels.com.bd'],
     ['Facebook', 'fb.com/matravelsbd'],
     ['Office Hours', 'Sat–Thu 9AM–7PM'],

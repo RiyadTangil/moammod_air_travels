@@ -67,23 +67,44 @@ export default function Hero() {
       </div>
 
       <div className="hero-content">
+        {/* Company name — top highlight */}
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '10px',
+          padding: '16px 44px',
+          borderRadius: '100px',
+          background: 'rgba(10, 30, 60, 0.55)',
+          border: '1.5px solid rgba(66,165,245,0.55)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          boxShadow: '0 0 48px rgba(66,165,245,0.22), 0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12)',
+          marginBottom: '28px',
+          animation: 'fadeInUp 0.7s ease both',
+        }}>
+          <span style={{
+            fontSize: 'clamp(1.5rem, 3.8vw, 2.6rem)',
+            fontWeight: 900,
+            letterSpacing: '0.3px',
+            lineHeight: 1.2,
+            background: 'linear-gradient(90deg, #ffffff 0%, #42A5F5 35%, #66BB6A 65%, #ffffff 100%)',
+            backgroundSize: '200% auto',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            animation: 'gradientShift 5s linear infinite',
+            whiteSpace: 'nowrap',
+          }}>
+            ✈️ Mohammod Air International Travels
+          </span>
+        </div>
+
         <div className="hero-badge">
           <span className="dot" />
           🇧🇩 Bangladesh&apos;s Trusted Travel Partner
         </div>
         <h1>
-          Fly Further,<br />
-          Dream <span className="highlight">Bigger</span>
-          <div style={{ 
-            fontSize: 'clamp(1.2rem, 3.5vw, 2.2rem)', 
-            marginTop: '16px', 
-            color: 'var(--blue-glow)', 
-            fontWeight: 800, 
-            letterSpacing: '-0.5px',
-            lineHeight: 1.3
-          }}>
-            with Mohammod Air International Travels
-          </div>
+          Fly <span className="highlight">Further</span>, Dream <span className="highlight">Bigger</span>
         </h1>
         <p>
           From manpower recruitment to visa processing, air ticketing to Hajj &amp; Umrah — we handle every step of your journey with care, speed, and expertise.
@@ -98,7 +119,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-stats">
+      {/* <div className="hero-stats">
         <div className="stat-card">
           <div className="num">{counts.years}+</div>
           <div className="label">Years Experience</div>
@@ -115,7 +136,7 @@ export default function Hero() {
           <div className="num">{counts.countries}+</div>
           <div className="label">Countries Covered</div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

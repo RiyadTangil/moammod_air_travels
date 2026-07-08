@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
             <InquiryModal />
             <Toast />
-            <a className="whatsapp-float" href="https://wa.me/880XXXXXXXXXX" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+            <a className="whatsapp-float" href="https://wa.me/01879994701" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
               💬
             </a>
           </ModalProvider>

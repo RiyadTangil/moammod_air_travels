@@ -13,8 +13,8 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <Hero />
       <AnnouncementTicker />
+      <Hero />
       <Services />
       <ProfileHero />
       <WhyUs />

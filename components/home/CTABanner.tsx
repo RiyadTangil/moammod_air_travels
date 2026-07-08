@@ -21,7 +21,7 @@ export default function CTABanner() {
           <button className="btn-white" onClick={() => openModal('General Inquiry')} style={{ padding: '16px 40px', fontSize: '1.05rem', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
             ✈️ Book Free Consultation
           </button>
-          <a href="tel:01775725566" className="btn-cta-outline" style={{ padding: '16px 40px', fontSize: '1.05rem', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)' }}>
+          <a href="tel:01879994701" className="btn-cta-outline" style={{ padding: '16px 40px', fontSize: '1.05rem', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)' }}>
             📞 Call Now
           </a>
         </div>

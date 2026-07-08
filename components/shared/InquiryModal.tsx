@@ -41,7 +41,7 @@ export default function InquiryModal() {
             </div>
             <div className="form-group">
               <label>Phone Number *</label>
-              <input type="tel" placeholder="01775725566" required />
+              <input type="tel" placeholder="01879994701" required />
             </div>
             <div className="form-group">
               <label>Email Address</label>

@@ -14,7 +14,7 @@ export default function Footer() {
           <p>Your trusted travel and visa consultancy in Bangladesh. Serving clients across the nation with professionalism, transparency, and heart since 2012.</p>
           <div className="social-links">
             <a className="social-btn" href="#" title="Facebook">📘</a>
-            <a className="social-btn" href="#" title="WhatsApp">💬</a>
+            <a className="social-btn" href="https://wa.me/8801879994701" title="WhatsApp">💬</a>
             <a className="social-btn" href="#" title="YouTube">▶️</a>
             <a className="social-btn" href="#" title="Instagram">📸</a>
           </div>
@@ -47,8 +47,9 @@ export default function Footer() {
           <ul>
             <li><span>📍</span> Head office: 14/6 lift 13 west, China Town Nayapaltan,Dhaka</li>
             <li><span>📞</span> 01775725566</li>
-            <li><span>📱</span> 01775725566 (WhatsApp)</li>
+            <li><span>📱</span> 01879994701 (WhatsApp)</li>
             <li><span>✉️</span> mohammadairtravels1@gmail.com</li>
+            <li><span>✉️</span> reservation@mohammadairint.com</li>
             <li><span>🕐</span> Sat–Thu: 9AM – 7PM</li>
           </ul>
         </div>

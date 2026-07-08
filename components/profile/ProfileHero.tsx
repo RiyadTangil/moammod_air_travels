@@ -26,14 +26,15 @@ export default function ProfileHero() {
 
           <ul className="owner-contact-list">
             <li><span>📞</span> 01775725566</li>
-            <li><span>📱</span> 01775725566 (WhatsApp)</li>
+            <li><span>📱</span> 01879994701 (WhatsApp)</li>
             <li><span>✉️</span>mohammadairtravels1@gmail.com</li>
+            <li><span>✉️</span>reservation@mohammadairint.com</li>
             <li><span>📍</span> Head office: 14/6 lift 13 west, China Town Nayapaltan,Dhaka</li>
             <li><span>🕐</span> Sat–Thu: 9AM – 7PM</li>
           </ul>
 
           <div className="owner-action-btns">
-            <a href="https://wa.me/880XXXXXXXXXX" className="btn-wa">💬 WhatsApp</a>
+            <a href="https://wa.me/8801879994701" className="btn-wa">💬 WhatsApp</a>
             <button className="btn-inquiry" onClick={() => openModal('General Inquiry')}>✈️ Inquiry</button>
           </div>
         </div>
