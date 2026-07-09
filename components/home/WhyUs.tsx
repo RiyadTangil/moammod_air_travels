@@ -9,7 +9,7 @@ const FEATURES = [
 export default function WhyUs() {
   return (
     <section className="why-section">
-      <div className="section-tag">Why Mohammod Air International Travels</div>
+      <div className="section-tag">Why Mohammad Air International Travels</div>
       <h2 className="section-title">Why <span>Thousands Trust</span> Us</h2>
 
       <div className="why-grid">

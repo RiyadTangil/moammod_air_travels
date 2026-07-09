@@ -72,7 +72,7 @@ function Overview({ onSwitch }: { onSwitch: (s: Section) => void }) {
         <table>
           <thead><tr><th>Service</th><th>Status</th><th>Enquiries</th><th>This Month</th></tr></thead>
           <tbody>
-            {[['Manpower Recruitment',84,'+12'],['Indian Visa',67,'+9'],['Tourist Visa',45,'+6'],['Air Ticketing',112,'+18'],['Hajj & Umrah',28,'+3']].map(([s,e,m]) => (
+            {[['Manpower Recruitment', 84, '+12'], ['Indian Visa', 67, '+9'], ['Tourist Visa', 45, '+6'], ['Air Ticketing', 112, '+18'], ['Hajj & Umrah', 28, '+3']].map(([s, e, m]) => (
               <tr key={String(s)}><td><strong>{s}</strong></td><td><span className="status-pill status-active">Active</span></td><td>{e}</td><td>{m}</td></tr>
             ))}
           </tbody>
@@ -88,8 +88,8 @@ function ProfileEdit() {
     <div className="profile-edit-card">
       <h3>🏢 Edit Business Profile</h3>
       <div className="profile-edit-grid">
-        <div className="form-group"><label>Business Name</label><input type="text" defaultValue="Mohammod Air International Travels" /></div>
-        <div className="form-group"><label>Owner Name</label><input type="text" defaultValue="Md. Salah Uddin" /></div>
+        <div className="form-group"><label>Business Name</label><input type="text" defaultValue="Mohammad Air International Travels" /></div>
+        <div className="form-group"><label>Owner Name</label><input type="text" defaultValue="MD Salahuddin Sarker" /></div>
         <div className="form-group"><label>Phone</label><input type="tel" defaultValue="01775725566" /></div>
         <div className="form-group"><label>Email</label><input type="email" defaultValue="mohammadairtravels1@gmail.com" /></div>
         <div className="form-group full"><label>Address</label><input type="text" defaultValue="Head office: 14/6 lift 13 west, China Town Nayapaltan,Dhaka" /></div>
@@ -153,10 +153,10 @@ export default function DashboardPage() {
         </div>
 
         <div className="dash-content">
-          {activeSection === 'overview'      && <Overview onSwitch={setActiveSection} />}
-          {activeSection === 'services'      && <ServicesTable />}
-          {activeSection === 'enquiries'     && <EnquiriesTable />}
-          {activeSection === 'profile'       && <ProfileEdit />}
+          {activeSection === 'overview' && <Overview onSwitch={setActiveSection} />}
+          {activeSection === 'services' && <ServicesTable />}
+          {activeSection === 'enquiries' && <EnquiriesTable />}
+          {activeSection === 'profile' && <ProfileEdit />}
           {/* {activeSection === 'gallery'       && <Placeholder icon="🖼️" title="Gallery Management" desc="Coming soon — upload office photos, success stories & more." />}
           {activeSection === 'testimonials'  && <Placeholder icon="⭐" title="Testimonials Management" desc="Coming soon — manage client reviews and ratings." />} */}
         </div>

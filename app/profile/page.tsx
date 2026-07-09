@@ -7,8 +7,8 @@ import FounderBio from '@/components/profile/FounderBio';
 import MapSection from '@/components/profile/MapSection';
 
 export const metadata: Metadata = {
-  title: 'About Us — Mohammod Air International Travels Bangladesh',
-  description: 'Learn about Mohammod Air International Travels — Bangladesh\'s trusted travel and visa agency. Meet our team, explore our history, and find our office location in Dhaka.',
+  title: 'About Us — Mohammad Air International Travels Bangladesh',
+  description: 'Learn about Mohammad Air International Travels — Bangladesh\'s trusted travel and visa agency. Meet our team, explore our history, and find our office location in Dhaka.',
 };
 
 export default function ProfilePage() {

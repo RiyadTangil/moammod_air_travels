@@ -12,7 +12,7 @@ export default function MapSection() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Mohammod Air International Travels Office Location"
+          title="Mohammad Air International Travels Office Location"
         />
       </div>
     </section>

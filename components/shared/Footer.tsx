@@ -9,8 +9,8 @@ export default function Footer() {
     <footer className="footer" id="contact">
       <div className="footer-grid">
         <div className="footer-brand">
-          <Image src="/images/logo.png" alt="Mohammod Air International Travels" width={50} height={50} className="footer-logo" />
-          <div className="brand">Mohammod Air International Travels</div>
+          <Image src="/images/logo.png" alt="Mohammad Air International Travels" width={50} height={50} className="footer-logo" />
+          <div className="brand">Mohammad Air International Travels</div>
           <p>Your trusted travel and visa consultancy in Bangladesh. Serving clients across the nation with professionalism, transparency, and heart since 2012.</p>
           <div className="social-links">
             <a className="social-btn" href="#" title="Facebook">📘</a>
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>© 2025 Mohammod Air International Travels. All rights reserved. | ATAB Reg. | BAIRA Member</span>
+        <span>© 2025 Mohammad Air International Travels. All rights reserved. | ATAB Reg. | BAIRA Member</span>
         <div className="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>

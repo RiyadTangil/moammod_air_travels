@@ -13,14 +13,14 @@ export default function ProfileHero() {
           <div className="owner-photo-wrap">
             <Image
               src="/images/owner.jpg"
-              alt="Mohammod Air International Travels Owner"
+              alt="Mohammad Air International Travels Owner"
               width={140}
               height={140}
               className="owner-photo"
             />
             <div className="owner-badge">✓</div>
           </div>
-          <h2>Md. Salah Uddin</h2>
+          <h2>MD Salahuddin Sarker</h2>
           <div className="title">Founder &amp; Managing Director</div>
           <div className="exp">15+ Years in Travel Industry</div>
 
@@ -42,10 +42,10 @@ export default function ProfileHero() {
         {/* Agency Info */}
         <div className="profile-agency-info">
           <div className="section-tag">About the Company</div>
-          <h1 className="agency-name">MA <span>Travels</span></h1>
+          <h1 className="agency-name"> Mohammad Air International <span>Travels</span></h1>
           <div className="agency-tagline">✈️ আপনার বিশ্বস্ত ভ্রমণ সঙ্গী — Your Trusted Travel Companion</div>
           <p className="agency-desc">
-            Mohammod Air International Travels is a government-registered travel and immigration consultancy firm based in Dhaka, Bangladesh. Since our establishment in 2012, we have been helping thousands of Bangladeshi citizens — workers, students, pilgrims, tourists, and medical patients — achieve their travel goals safely and legally.
+            Mohammad Air International Travels is a government-registered travel and immigration consultancy firm based in Dhaka, Bangladesh. Since our establishment in 2012, we have been helping thousands of Bangladeshi citizens — workers, students, pilgrims, tourists, and medical patients — achieve their travel goals safely and legally.
             <br /><br />
             We specialize in visa processing, air ticketing, manpower recruitment, Hajj &amp; Umrah arrangements, and work permit services across the Gulf, South East Asia, and beyond.
           </p>

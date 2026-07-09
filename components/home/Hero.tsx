@@ -70,7 +70,7 @@ export default function Hero() {
         {/* Company name — top highlight */}
         <div className="hero-company-wrap">
           <span className="hero-company-text">
-            ✈️ Mohammod Air International Travels
+            ✈️ Mohammad Air International Travels
           </span>
         </div>
 

@@ -18,9 +18,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
       <Link href="/" className="nav-logo">
-        <Image src="/images/logo.png" alt="Mohammod Air International Travels Logo" width={46} height={46} style={{ height: 46, width: 'auto' }} />
+        <Image src="/images/logo.png" alt="Mohammad Air International Travels Logo" width={46} height={46} style={{ height: 46, width: 'auto' }} />
         <div className="nav-logo-text">
-          <span className="brand-name">Mohammod Air International Travels</span>
+          <span className="brand-name">Mohammad Air International Travels</span>
           <span className="brand-tagline">Your Journey, Our Promise</span>
         </div>
       </Link>

@@ -310,21 +310,34 @@ section { padding: 90px 8%; }
 .svc-cta {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
+  height: 32px;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  transition: gap 0.2s ease;
+  background: var(--gradient-primary) !important;
+  color: var(--white) !important;
+  padding: 0 18px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-blue);
+  transition: gap 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   white-space: nowrap;
   flex-shrink: 0;
 }
-.service-card:hover .svc-cta { gap: 12px; }
+.service-card:hover .svc-cta {
+  gap: 12px;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(21, 101, 192, 0.5);
+}
 .svc-arrow {
   display: inline-block;
   transition: transform 0.25s ease;
 }
-.service-card:hover .svc-arrow { transform: translateX(4px); }
+.service-card:hover .svc-arrow {
+  transform: translateX(4px);
+}
 
 /* =============================================
    WHY CHOOSE US

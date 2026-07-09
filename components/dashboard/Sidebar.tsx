@@ -22,7 +22,7 @@ export default function Sidebar({ activeSection, onSectionChange, onLogout }: Pr
       <div className="sidebar-logo">
         <Image src="/images/logo.png" alt="Logo" width={36} height={36} />
         <div>
-          <div className="s-name">Mohammod Air International Travels</div>
+          <div className="s-name">Mohammad Air International Travels</div>
           <div className="s-sub">Admin Panel</div>
         </div>
       </div>

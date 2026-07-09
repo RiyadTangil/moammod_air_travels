@@ -6,8 +6,8 @@ import InquiryModal from '@/components/shared/InquiryModal';
 import Toast from '@/components/shared/Toast';
 
 export const metadata: Metadata = {
-  title: 'Mohammod Air International Travels — Your Trusted Travel & Visa Partner in Bangladesh',
-  description: 'Mohammod Air International Travels is Bangladesh\'s trusted travel agency offering Manpower Recruitment, Indian Visa, Tourist Visa, Air Ticketing, Hajj & Umrah, Work Permit and more.',
+  title: 'Mohammad Air International Travels — Your Trusted Travel & Visa Partner in Bangladesh',
+  description: 'Mohammad Air International Travels is Bangladesh\'s trusted travel agency offering Manpower Recruitment, Indian Visa, Tourist Visa, Air Ticketing, Hajj & Umrah, Work Permit and more.',
   keywords: 'travel agency bangladesh, manpower recruitment, indian visa, hajj umrah, air ticket dhaka, tourist visa bangladesh',
   icons: { icon: '/images/logo.png' },
 };
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
             <InquiryModal />
             <Toast />
-            <a className="whatsapp-float" href="https://wa.me/01879994701" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+            <a className="whatsapp-float" href="https://wa.me/+8801879994701" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
               💬
             </a>
           </ModalProvider>

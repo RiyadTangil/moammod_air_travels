@@ -25,8 +25,8 @@ export default function LoginScreen({ onLogin }: Props) {
     <div className="login-screen">
       <div className="login-card">
         <div className="login-logo">
-          <Image src="/images/logo.png" alt="Mohammod Air International Travels" width={60} height={60} style={{ margin: '0 auto 12px' }} />
-          <h2>Mohammod Air International Travels Admin</h2>
+          <Image src="/images/logo.png" alt="Mohammad Air International Travels" width={60} height={60} style={{ margin: '0 auto 12px' }} />
+          <h2>Mohammad Air International Travels Admin</h2>
           <p>Sign in to access your dashboard</p>
         </div>
 

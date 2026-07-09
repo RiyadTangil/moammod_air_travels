@@ -1,6 +1,6 @@
 const INFO_ROWS = {
   'Company Information': [
-    ['Company Name', 'Mohammod Air International Travels'],
+    ['Company Name', 'Mohammad Air International Travels'],
     ['Full Name (Bangla)', 'এমএ ট্রাভেলস'],
     ['Established', '2012'],
     ['Business Type', 'Travel & Immigration Agency'],
